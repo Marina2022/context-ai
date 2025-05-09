@@ -4,14 +4,13 @@ import React from 'react';
 import s from '../AiWorkspaceSlider/AiWorkspaceSlider.module.scss'
 import Image from 'next/image';
 import slideImage from '@/assets/img/megaMenuPage/slider/slide2.png'
-import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide1Mobile.png'
+import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide2Mobile.png'
 import useMobileScreen from "@/hooks/useMobileScreen";
-const Slide1 = () => {
+const Slide2 = () => {
   
   const isMobile = useMobileScreen()
   return (
     <div className={s.slideContent}>
-
       <h3 className={s.slideTitle}>
         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -24,19 +23,16 @@ const Slide1 = () => {
             d="M0.833313 11.3911C1.4786 11.9474 2.24341 12.3727 3.01524 12.6976C4.82301 13.4588 7.14674 13.8699 9.58331 13.8699C12.0199 13.8699 14.3436 13.4588 16.1514 12.6976C16.9232 12.3727 17.6881 11.9474 18.3333 11.3911V13.0366C18.3333 13.7839 17.9701 14.4226 17.4657 14.9246C16.9646 15.4235 16.2817 15.8344 15.5046 16.1616C13.947 16.8174 11.8529 17.2032 9.58331 17.2032C7.3137 17.2032 5.21968 16.8174 3.662 16.1616C2.88486 15.8344 2.20197 15.4235 1.70085 14.9246C1.19657 14.4226 0.833313 13.7839 0.833313 13.0366V11.3911Z"
             fill="#151517" fillOpacity="0.88"/>
         </svg>
-
-
         <span>
           Data Analysis & Spreadsheets. 
         </span>
       </h3>
-
       <p className={s.slideText}>
         Analyze financial models, trends and datasets. Automate calculations, generate insights, and visualize data instantly.
       </p>
-      <Image className={s.slideImg} src={isMobile ? slideImageMobile : slideImage} alt="img"/>
+      <Image className={`${s.slideImg} ${s.slideImg2and5}`} src={isMobile ? slideImageMobile : slideImage} alt="img"/>
     </div>
   );
 };
 
-export default Slide1;
+export default Slide2;

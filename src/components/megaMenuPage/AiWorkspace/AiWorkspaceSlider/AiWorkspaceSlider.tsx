@@ -5,6 +5,9 @@ import 'swiper/css';
 import s from './AiWorkspaceSlider.module.scss';
 import Slide1 from "@/components/megaMenuPage/AiWorkspace/slides/Slide1";
 import Slide2 from "@/components/megaMenuPage/AiWorkspace/slides/Slide2";
+import Slide3 from "@/components/megaMenuPage/AiWorkspace/slides/Slide3";
+import Slide4 from "@/components/megaMenuPage/AiWorkspace/slides/Slide4";
+import Slide5 from "@/components/megaMenuPage/AiWorkspace/slides/Slide5";
 
 const AiWorkspaceSlider = () => {
   return (
@@ -23,20 +26,19 @@ const AiWorkspaceSlider = () => {
         </SwiperSlide>
 
         <SwiperSlide className={s.slide}>
-          <Slide1/>
+          <Slide3/>
         </SwiperSlide>
 
         <SwiperSlide className={s.slide}>
-          <Slide1/>
+          <Slide4/>
         </SwiperSlide>
 
         <SwiperSlide className={s.slide}>
-          <Slide1/>
+          <Slide5/>
         </SwiperSlide>
 
 
         <SwiperSlide className={s.slide}>
-
         </SwiperSlide>
 
 

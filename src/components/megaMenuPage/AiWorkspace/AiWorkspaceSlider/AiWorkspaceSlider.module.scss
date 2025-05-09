@@ -39,9 +39,9 @@
   border-radius: 4px;
   padding: 40px 39px;
   overflow: hidden;
+  border: 0.5px solid rgba(21, 21, 23, 0.2);
   
-  @include m {
-    border: 0.5px solid rgba(21, 21, 23, 0.2);
+  @include m {    
     padding: 20px 0px;
   }
 }
@@ -73,5 +73,14 @@
   @include m {
     width: 100%;
     height: auto;
+  }
+}
+
+
+.slideImg2and5 {
+
+  @include m {
+    margin-left: 20px;
+    width: calc(100% - 20px);
   }
 }
