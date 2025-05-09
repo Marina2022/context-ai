@@ -10,12 +10,16 @@ import Slide2 from "@/components/megaMenuPage/AiWorkspace/slides/Slide2";
 import Slide3 from "@/components/megaMenuPage/AiWorkspace/slides/Slide3";
 import Slide4 from "@/components/megaMenuPage/AiWorkspace/slides/Slide4";
 import Slide5 from "@/components/megaMenuPage/AiWorkspace/slides/Slide5";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 const AiWorkspaceSlider = () => {
 
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
 
+  const [activeIndex, setActiveIndex] = useState(0);
+  
+  const realSlidesCount = 5;
+  
   return (
     <div className={s.outer}>
       <div className={s.navButtons}>
@@ -26,7 +30,8 @@ const AiWorkspaceSlider = () => {
             />
           </svg>
         </button>
-        <button ref={nextRef} className={s.navButton}>
+        <button disabled={activeIndex === realSlidesCount - 1}
+                ref={nextRef} className={s.navButton}>
           <svg width="19" height="14" viewBox="0 0 19 14" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M17.8105 6.0625H18.25V7.5625H17.8105L11.7852 13.5879L10.7246 12.5273L15.6895 7.5625H0.839844V6.0625H15.6895L10.7246 1.09766L11.7852 0.0371094L17.8105 6.0625Z"
@@ -47,6 +52,10 @@ const AiWorkspaceSlider = () => {
               swiper.params.navigation.nextEl = nextRef.current;
             }
           }}
+
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+
+
         >
           <SwiperSlide className={s.slide}>
             <Slide1/>
