@@ -70,7 +70,7 @@ const AiWorkspaceSlider = () => {
 
           <SwiperSlide className={s.slide}>
           </SwiperSlide>
-          <div className={s.lastSlide}></div>          
+          {/*<div className={s.lastSlide}></div>          */}
         </Swiper>
       </div>
     </div>
