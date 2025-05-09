@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'testSignifier';
+    src: url('/fonts/test-signifier-medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: 500;
+}
+
+
+.myDiv {
+    font-family: 'testSignifier', sans-serif;
+    font-size: 24px;
+}
+
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url('/fonts/SuisseIntl-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.myDiv {
+    font-family: 'SuisseIntl', serif;
+    font-size: 24px;
+}
