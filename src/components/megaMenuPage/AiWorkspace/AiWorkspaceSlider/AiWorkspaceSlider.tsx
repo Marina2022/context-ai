@@ -18,7 +18,7 @@ const AiWorkspaceSlider = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
   
-  const realSlidesCount = 5;
+  // const realSlidesCount = 5;
 
   console.log({activeIndex})
   
