@@ -1,33 +1,36 @@
 @use '@/assets/styles/mixins' as *;
 
+.outer {
+  position: relative;
+}
+
 .sliderWrapper {
-  
+  position: relative;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   padding-left: calc(50vw - 50%);
-  overflow-x: hidden;
+  overflow: hidden;
+
 
   .swiper {
-    overflow: visible; 
+    overflow: visible;
     height: 608px;
   }
 }
 
-.slide {  
+.slide {
   border-radius: 4px;
-  width: 500px !important; 
+  width: 500px !important;
   flex-shrink: 0;
   height: 100% !important;
-  
-  
-  &:last-child {
-    width: calc((100vw - 1006px)/2 - 32px) !important;
-    background: transparent;
-    color: transparent;
-    border: none;
-  }
 }
 
+.lastSlide {
+  width: calc((100vw - 1006px) / 2 - 32px) !important;
+  background: transparent;
+  color: transparent;
+  border: none;
+}
 
 /// styles for slides
 
@@ -40,17 +43,17 @@
   padding: 40px 39px;
   overflow: hidden;
   border: 0.5px solid rgba(21, 21, 23, 0.2);
-  
-  @include m {    
+
+  @include m {
     padding: 20px 0px;
   }
 }
 
-.slideTitle {  
+.slideTitle {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: -0.16px; 
+  letter-spacing: -0.16px;
   color: var(--title);
   display: flex;
   gap: 12px;
@@ -69,7 +72,7 @@
 
 .slideImg {
   margin-top: auto;
-  
+
   @include m {
     width: 100%;
     height: auto;
@@ -82,5 +85,29 @@
   @include m {
     margin-left: 20px;
     width: calc(100% - 20px);
+  }
+}
+
+.navButtons {
+  display: flex;
+  gap: 12px;
+  position: absolute;
+  right: calc(-1 * (100vw - 503px)/2 + 300px);
+  top: -60px;
+}
+
+.navButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(21, 21, 23, 0.03);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #151515;
+
+  &:disabled {
+    fill: #151515;
+    fill-opacity: 0.24;
   }
 }

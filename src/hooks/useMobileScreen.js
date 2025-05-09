@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 
 const useMobileScreen = () => {
-  const [isMobileScreen, setIsMobileScreen] = useState(false); // сначала false
+  
+  const [isMobileScreen, setIsMobileScreen] = useState(false); 
 
-  useEffect(() => {
+  useEffect(() => {   
     const checkScreenSize = () => {
       setIsMobileScreen(window.innerWidth <= 768);
     };

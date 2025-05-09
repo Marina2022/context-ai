@@ -12,23 +12,22 @@
 }
 
 .text {
-  max-width: 384px;
+  max-width: 335px;
+  margin-inline: auto;
+  text-align: center;
   font-size: 17px;
   line-height: 27px;
-  margin-bottom: 56px;
-  margin-inline: auto;
+  margin-bottom: 110px;
 }
 
-
-.outerWrapper {
+.image {
   margin-bottom: 112px;
+  max-width: 100%;
+  height: auto;
   
   @include m {
-    margin-bottom: 80px;
+    margin-bottom: 48px;
   }
-}
-
-.swiper {
-  overflow: visible;
   
 }
+

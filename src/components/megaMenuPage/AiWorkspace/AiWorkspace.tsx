@@ -10,7 +10,6 @@ const AiWorkspace = () => {
   const isMobile = useMobileScreen()
   
   return (
-
     <>
       <div className="container">
         <h2 className={s.title}>
@@ -27,11 +26,8 @@ const AiWorkspace = () => {
 
           {
             isMobile && <AiWorkspaceMobile/>
-          }
-          
+          }          
         </div>
-
-
       </div>
 
 
