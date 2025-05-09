@@ -1,0 +1,49 @@
+@use '@/assets/styles/mixins' as *;
+
+.quotationWrapper {
+  padding: 64px 80px 60px;
+  border: 0.5px solid rgba(0, 106, 140, 0.2);
+  background: linear-gradient(180.00deg, rgba(0, 106, 140, 0.08),rgba(0, 106, 140, 0.04) 100%);
+
+  @include t {
+    margin-inline: 20px;
+  }
+  
+  @include m {
+    padding: 20px;
+  }
+}
+
+.text {
+  font-family: SuisseIntlBook;
+  color: var(--title);
+  line-height: 34px;
+  margin-bottom: 60px;
+  letter-spacing: -0.24px;
+  font-size: 24px;
+}
+
+.bottomPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  
+  font-size: 16px;
+  font-family: SuisseIntlBook;
+}
+
+.author {
+  display: flex;
+  gap: 12px;
+  color: var(--title);
+  align-items: center;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;  
+}
+
+

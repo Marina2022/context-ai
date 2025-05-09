@@ -1,24 +1,24 @@
 @use '@/assets/styles/mixins' as *;
 
-  .meetContext {
-    margin-top: 112px;
-    margin-bottom: 56px;
-    max-width: 510px;
-    margin-inline: auto;
-    text-align: center;
-    
-    @include m {
-      margin-top: 80px;
-      margin-bottom: 48px;
-      padding-inline: 20px;
-    }
-  }
+.meetContextHeader {
+  margin-top: 112px;
+  margin-bottom: 56px;
+  max-width: 510px;
+  margin-inline: auto;
+  text-align: center;
 
-.mainTitle {  
+  @include m {
+    margin-top: 80px;
+    margin-bottom: 48px;
+    padding-inline: 20px;
+  }
+}
+
+.mainTitle {
   margin-bottom: 16px;
   font-size: 40px;
   color: var(--title);
-  
+
   @include m {
     font-family: 'testSignifier', sans-serif !important;
     font-weight: 500;
@@ -27,7 +27,6 @@
 }
 
 .text {
-  font-family: 'SuisseIntl', serif;
   color: var(--text);
   line-height: 27px;
   font-size: 17px;
