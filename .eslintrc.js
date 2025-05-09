@@ -1,5 +1,7 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
+  //parser: '@typescript-eslint/parser',  
+  parser: "babel-eslint", 
+  
   plugins: ['@typescript-eslint'],
   extends: [
     'next',
