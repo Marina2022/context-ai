@@ -1,0 +1,13 @@
+@use '@/assets/styles/mixins' as *;
+
+.menuWrapper {
+  height: 544px; // remove later  
+  border-top: solid 1px rgb(21 21 23 /.2);  
+  box-shadow: 0px 3px 8px 0px rgba(196, 196, 196, 0.1),0px 14px 14px 0px rgba(196, 196, 196, 0.09),0px 31px 19px 0px rgba(196, 196, 196, 0.05),0px 55px 22px 0px rgba(196, 196, 196, 0.01),0px 86px 24px 0px rgba(196, 196, 196, 0);  
+}
+
+.menuContainer {
+  max-width: 1156px;
+  margin: 0 auto;
+  padding-block: 32px;
+}

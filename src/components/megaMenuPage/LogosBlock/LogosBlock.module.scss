@@ -1,0 +1,13 @@
+@use '@/assets/styles/mixins' as *;
+
+.logoWrapper {
+  display: flex;
+  gap: 76px;
+  margin-top: 150px;
+  overflow: hidden;
+  
+  @include m {
+    gap: 62px;
+    margin-top: 40px;
+  }
+}
