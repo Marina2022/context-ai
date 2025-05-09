@@ -1,0 +1,30 @@
+@use '@/assets/styles/mixins' as *;
+
+.title {
+  color: var(--header);
+  font-size: 40px;
+  font-family: 'testSignifier';
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
+}
+
+.text {
+  max-width: 384px;
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 56px;
+  margin-inline: auto;
+}
+
+
+.outerWrapper {
+  margin-bottom: 250px;
+}
+
+.swiper {
+  overflow: visible;
+  
+}

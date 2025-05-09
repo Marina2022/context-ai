@@ -7,10 +7,10 @@ const useMobileScreen = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobileScreen(window.innerWidth <= 960);
+      setIsMobileScreen(window.innerWidth <= 768);
     };
 
-    checkScreenSize(); // сразу вызвать при монтировании
+    checkScreenSize(); 
     window.addEventListener("resize", checkScreenSize);
 
     return () => window.removeEventListener("resize", checkScreenSize);

@@ -9,14 +9,13 @@
   }
   
   @include m {
-    flex-wrap: wrap;   
-    
+    flex-wrap: wrap;
+    margin-bottom: 80px;
   }
 }
 
 .featureBlock {
-  padding: 64px 40px;
-  
+  padding: 64px 40px;  
   border-bottom: 0.5px solid rgba(21, 21, 23, 0.2);
   border-left: 0.5px solid rgba(21, 21, 23, 0.2);
   border-right: 0.5px solid rgba(21, 21, 23, 0.2);
@@ -26,11 +25,17 @@
   &:last-child {
     border-left: none;
     border-radius: 0px 0px 4px 0px;
+
+    @include m {            
+      border-radius: 0px 0px 4px 4px;
+      border-left: 0.5px solid rgba(21, 21, 23, 0.2);
+    }
   }
   
   @include m {
     flex-wrap: wrap;
     padding: 20px;
+    border-radius: 0px 0px 0px 0px;    
   }  
 }
 

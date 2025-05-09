@@ -3,6 +3,7 @@ import MeetContextHeader from "@/components/megaMenuPage/MeetContext/MeetContext
 import AllYourWork from "@/components/megaMenuPage/MeetContext/AllYourWork/AllYourWork";
 import MeetContexQuotation from "@/components/megaMenuPage/MeetContext/MeetContexQuotation/MeetContexQuotation";
 import TwoFeatures from "@/components/megaMenuPage/MeetContext/TwoFeatures/TwoFeatures";
+import YourWork from "@/components/megaMenuPage/YourWork/YourWork";
 
 const MeetContext = () => {
   return (
@@ -11,7 +12,7 @@ const MeetContext = () => {
       <MeetContextHeader/>
       <AllYourWork/>
       <MeetContexQuotation/>
-      <TwoFeatures />
+      <TwoFeatures />      
     </div>
 
 

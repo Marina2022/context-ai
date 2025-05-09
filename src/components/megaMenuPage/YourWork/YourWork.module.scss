@@ -1,0 +1,72 @@
+@use '@/assets/styles/mixins' as *;
+
+.yourWorkWrapper {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 112px;
+
+  @include t {
+    margin-inline: 20px;
+    width: unset;
+  }
+  
+  @include m {
+    flex-wrap: wrap;
+  }
+}
+
+.leftPart {
+  padding-right: 15px;
+  width: calc(50% - 12px);
+  flex-shrink: 0;
+
+  @include m {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.rightPart {
+  padding-left: 15px;
+  max-width: calc(81.5% - 12px);
+  width: calc(50vw - 100px);
+  min-width: calc(50% - 12px);
+  flex-shrink: 0;
+
+  @include t {
+    width: calc(50% - 12px);
+    min-width: unset;
+    max-width: unset;
+  }
+  
+  @include m {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.title {
+  color: var(--title);
+  font-family: 'testSignifier';
+  font-weight: 500;
+  margin-bottom: 56px;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -.4px;
+  
+  @include t {
+    margin-inline: 20px;    
+  }
+  
+  @include m {
+    margin-bottom: 48px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  
+}

@@ -1,0 +1,8 @@
+@use '@/assets/styles/mixins' as *;
+
+.cardsOnMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-inline: 20px;
+}

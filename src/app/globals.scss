@@ -17,10 +17,9 @@ img {
 
 html {
   overflow-x: hidden;
-  margin-right: calc(-1 * (100vw - 100%));
+  margin: 0;
 
   @include m {
-    margin-right: 0;
   }
 }
 
@@ -51,12 +50,10 @@ a {
 
   @include t {
     max-width: 100%;
-    //padding-inline: 20px;
   }
 
   @include m {
     max-width: unset;
-    //padding-inline: 16px;
   }
 }
 

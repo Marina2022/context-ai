@@ -37,14 +37,23 @@
   padding-left: 54px;
 
   @include m {
+    overflow: hidden;
     padding-left: 0px;
   }
 }
 
 .topImage {
-  max-width: 100%;
+  width: 100%;
   object-fit: contain;
   object-position: center;
+  
+  @include m {
+    //object-fit: unset;
+    position: relative;
+    left: -20px;
+    aspect-ratio: 1.5;
+    width: 80vw;
+  }
 }
 
 

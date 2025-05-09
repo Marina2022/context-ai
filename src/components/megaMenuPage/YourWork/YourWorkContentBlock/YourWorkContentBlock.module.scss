@@ -1,0 +1,104 @@
+@use '@/assets/styles/mixins' as *;
+
+.yourWorkContentBlock {
+  border: 0.5px solid rgba(21, 21, 23, 0.05);
+  border-radius: 4px;
+  background: rgba(21, 21, 23, 0.01);
+  padding: 7px;
+  margin-bottom: 12px;
+}
+
+.innerBlock {  
+  border: 0.5px solid rgba(21, 21, 23, 0.15);
+  border-radius: 4px;
+  box-shadow: inset 0px -0.54px 0.54px -0.27px rgba(51, 51, 51, 0.06), 0px 0px 0px 0.54px rgba(41, 41, 41, 0.04), 0px 26px 26px -13px rgba(41, 41, 41, 0.04), 0px 13px 13px -6.5px rgba(41, 41, 41, 0.04), 0px 6.5px 6.5px -3.25px rgba(41, 41, 41, 0.04), 0px 3.25px 3.25px -1.62px rgba(41, 41, 41, 0.04), 0px 1.62px 1.62px -0.81px rgba(41, 41, 41, 0.02), 0px 0.54px 0.54px 0.27px rgba(41, 41, 41, 0.04);
+  background: rgb(255, 255, 255);
+  padding: 8px 12px;
+  min-height: 140px;
+  
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;  
+  margin-bottom: min(16%, 76px);
+  
+  @include m {
+    margin-bottom: min(16%, 36px);
+  }
+}
+
+.btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid rgba(21, 21, 23, 0.2);
+  border-radius: 4px;
+  background: rgba(21, 21, 23, 0.01);
+  height: 32px;
+  width: 100%;
+  padding-block: 6px;  
+}
+
+.btnActive {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  height: 32px;
+  width: 100%;
+  padding-block: 6px;
+
+  border: 0.5px solid rgba(0, 67, 89, 0.2);
+  background: rgba(0, 67, 89, 0.08);
+  color: #004359;
+  font-weight: 500;
+}
+
+.icon {  
+  stroke: rgba(21, 21, 23, 0.64);  
+}
+
+.iconActive {
+  stroke: #004359;
+}
+
+.iconFill {
+  fill: rgba(21, 21, 23, 0.64);
+}
+
+.iconFillActive {
+  fill: #004359;
+}
+
+.line {
+  margin-bottom: min(11%, 56px);
+  
+  @include m {
+    @include m {
+      margin-bottom: min(11%, 24px);
+    }
+  }
+}
+
+.text {
+ color: var(--title);
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 24px;  
+  letter-spacing: -0.24px;
+}
+
+.learnMore {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 15px;
+  text-decoration: underline;
+  color: var(--text) !important;
+}

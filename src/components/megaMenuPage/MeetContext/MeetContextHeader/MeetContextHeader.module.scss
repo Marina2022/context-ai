@@ -20,7 +20,7 @@
   color: var(--title);
 
   @include m {
-    font-family: 'testSignifier', sans-serif !important;
+    font-family: 'testSignifier' !important;
     font-weight: 500;
     font-size: 30px;
   }

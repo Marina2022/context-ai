@@ -1,6 +1,6 @@
 'use client'
 
-import s from '../AllYourWork.module.scss';
+import s from './AllYourWork.module.scss';
 import Image from 'next/image'
 import meetContextTop from '@/assets/img/megaMenuPage/meetContext/meet-context-top.png'
 import meetContextTopMobile from '@/assets/img/megaMenuPage/meetContext/meet-context-top-mobile.png'
