@@ -8,19 +8,30 @@
   background: linear-gradient(180.00deg, rgb(0, 86, 115),rgb(0, 48, 64) 100%);
   margin-bottom: 112px;
   
-  @include m {
-    margin-bottom: 80px;
+  @include t {
     margin-inline: 20px;
+  }
+  
+  @include m {
+    margin-bottom: 80px;    
   }
 }
 
 .content {
+  width: 45%;
   max-width: 458px;
   padding: 64px;
   color: white;
   
+  @include t {
+    padding: 32px;
+  }
+  
   @include m {
+    padding: 20px;
     max-width: 100%;
+    width: 100%;
+    max-width: unset;
   }
 }
 
@@ -53,13 +64,26 @@
 }
 
 .img {
-  position: absolute;
-  top: 36px;
+  position: absolute;  
   right: 0;
-  max-width: 100%;
+  width: 55%;
+  height: auto;
+  bottom: 0;
+  max-height: 90%;
+  object-fit: cover;
+  
+  @include m  {
+    max-height: unset;
+  }
 }
 
 .imgMobile {
   position: static;
-  margin-left: 20px;  
+  margin-left: 20px;
+  width: 100%;
+
+  @include t {
+    max-width: calc(100% - 20px );
+    height: auto;
+  }
 }   
