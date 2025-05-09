@@ -17,11 +17,7 @@ const AiWorkspaceSlider = () => {
   const nextRef = useRef<HTMLButtonElement | null>(null);
 
   const [activeIndex, setActiveIndex] = useState(0);
-  
-  // const realSlidesCount = 5;
-
-  console.log({activeIndex})
-  
+        
   return (
     <div className={s.outer}>
       <div className={s.navButtons}>
@@ -31,8 +27,7 @@ const AiWorkspaceSlider = () => {
               d="M8.27539 1.09766L3.31055 6.0625H18.1592V7.5625H3.31055L8.27539 12.5273L7.21484 13.5879L0.969727 7.34277V6.28223L7.21484 0.0371094L8.27539 1.09766Z"
             />
           </svg>
-        </button>
-        {/*<button disabled={activeIndex === realSlidesCount - 1}*/}
+        </button>        
         <button disabled={activeIndex === 3}
                 ref={nextRef} className={s.navButton}>
           <svg width="19" height="14" viewBox="0 0 19 14" xmlns="http://www.w3.org/2000/svg">

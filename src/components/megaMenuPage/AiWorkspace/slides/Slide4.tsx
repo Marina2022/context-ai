@@ -5,11 +5,11 @@ import s from '../AiWorkspaceSlider/AiWorkspaceSlider.module.scss'
 import Image from 'next/image';
 import slideImage from '@/assets/img/megaMenuPage/slider/slide4.png'
 import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide4Mobile.png'
-import useMobileScreen from "@/hooks/useMobileScreen";
+import useTabletScreen from "@/hooks/useTabletScreen";
 
 const Slide4 = () => {
 
-  const isMobile = useMobileScreen()
+  const isTablet = useTabletScreen()
   return (
     <div className={s.slideContent}>
 
@@ -31,7 +31,7 @@ const Slide4 = () => {
         Draft reports, summaries, and business documents in seconds. Context extracts key insights, formats content, and
         ensures clarity and accuracy.
       </p>
-      <Image className={s.slideImg} src={isMobile ? slideImageMobile : slideImage} alt="img"/>
+      <Image className={s.slideImg} src={isTablet ? slideImageMobile : slideImage} alt="img"/>
     </div>
   );
 };

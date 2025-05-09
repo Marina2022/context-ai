@@ -5,10 +5,11 @@ import s from '../AiWorkspaceSlider/AiWorkspaceSlider.module.scss'
 import Image from 'next/image';
 import slideImage from '@/assets/img/megaMenuPage/slider/slide2.png'
 import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide2Mobile.png'
-import useMobileScreen from "@/hooks/useMobileScreen";
+import useTabletScreen from "@/hooks/useTabletScreen";
+
 const Slide2 = () => {
-  
-  const isMobile = useMobileScreen()
+
+  const isTablet = useTabletScreen()
   return (
     <div className={s.slideContent}>
       <h3 className={s.slideTitle}>
@@ -30,7 +31,7 @@ const Slide2 = () => {
       <p className={s.slideText}>
         Analyze financial models, trends and datasets. Automate calculations, generate insights, and visualize data instantly.
       </p>
-      <Image className={`${s.slideImg} ${s.slideImg2and5}`} src={isMobile ? slideImageMobile : slideImage} alt="img"/>
+      <Image className={`${s.slideImg} ${s.slideImg2and5}`} src={isTablet ? slideImageMobile : slideImage} alt="img"/>
     </div>
   );
 };

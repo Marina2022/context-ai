@@ -5,11 +5,11 @@ import s from '../AiWorkspaceSlider/AiWorkspaceSlider.module.scss'
 import Image from 'next/image';
 import slideImage from '@/assets/img/megaMenuPage/slider/slide5.png'
 import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide5Mobile.png'
-import useMobileScreen from "@/hooks/useMobileScreen";
+import useTabletScreen from "@/hooks/useTabletScreen";
 
 const Slide5 = () => {
 
-  const isMobile = useMobileScreen()
+  const isTablet = useTabletScreen()
   return (
     <div className={s.slideContent}>
       <h3 className={s.slideTitle}>
@@ -27,7 +27,7 @@ const Slide5 = () => {
         Easily create stunning visualizations and process large datasets with a built-in, AI-powered coding
         environment—perfect for analysts, engineers, and researchers.
       </p>
-      <Image className={`${s.slideImg} ${s.slideImg2and5}`} src={isMobile ? slideImageMobile : slideImage} alt="img"/>
+      <Image className={`${s.slideImg} ${s.slideImg2and5}`} src={isTablet ? slideImageMobile : slideImage} alt="img"/>
     </div>
   );
 };

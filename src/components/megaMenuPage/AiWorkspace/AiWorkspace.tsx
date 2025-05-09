@@ -2,12 +2,12 @@
 
 import s from './AiWorkspace.module.scss';
 import AiWorkspaceSlider from "@/components/megaMenuPage/AiWorkspace/AiWorkspaceSlider/AiWorkspaceSlider";
-import useMobileScreen from "@/hooks/useMobileScreen";
 import AiWorkspaceMobile from "@/components/megaMenuPage/AiWorkspace/AiWorkspaceMobile/AiWorkspaceMobile";
+import useTabletScreen from "@/hooks/useTabletScreen";
 
 const AiWorkspace = () => {
 
-  const isMobile = useMobileScreen()
+  const isTablet = useTabletScreen()
   
   return (
     <>
@@ -21,11 +21,11 @@ const AiWorkspace = () => {
 
         <div className={s.outerWrapper}>
           {
-            !isMobile && <AiWorkspaceSlider/>
+            !isTablet && <AiWorkspaceSlider/>
           }
 
           {
-            isMobile && <AiWorkspaceMobile/>
+            isTablet && <AiWorkspaceMobile/>
           }          
         </div>
       </div>

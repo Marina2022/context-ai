@@ -5,11 +5,11 @@ import s from '../AiWorkspaceSlider/AiWorkspaceSlider.module.scss'
 import Image from 'next/image';
 import slideImage from '@/assets/img/megaMenuPage/slider/slide3.png'
 import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide3Mobile.png'
-import useMobileScreen from "@/hooks/useMobileScreen";
+import useTabletScreen from "@/hooks/useTabletScreen";
 
 const Slide3 = () => {
 
-  const isMobile = useMobileScreen()
+  const isTablet = useTabletScreen()
   return (
     <div className={s.slideContent}>
 
@@ -32,7 +32,7 @@ const Slide3 = () => {
         Context searches, summarizes, and organizes research from both your data and verified internet sources,
         delivering the right insights exactly when you need them.
       </p>
-      <Image className={s.slideImg} src={isMobile ? slideImageMobile : slideImage} alt="img"/>
+      <Image className={s.slideImg} src={isTablet ? slideImageMobile : slideImage} alt="img"/>
     </div>
   );
 };

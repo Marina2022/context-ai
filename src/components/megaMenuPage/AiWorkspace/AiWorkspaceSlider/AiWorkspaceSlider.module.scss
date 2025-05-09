@@ -10,12 +10,16 @@
   margin-left: calc(-50vw + 50%);
   padding-left: calc(50vw - 50%);
   overflow: hidden;
-
-
-  .swiper {
-    overflow: visible;
-    height: 608px;
+  
+  @include t {
+    width: 100%;
+    margin-inline: 20px;    
   }
+}
+
+.swiper {
+  overflow: visible;
+  height: 608px;
 }
 
 .slide {
@@ -23,6 +27,12 @@
   width: 500px !important;
   flex-shrink: 0;
   height: 100% !important;
+  
+  &:last-child {
+    @include t {
+      display: none;
+    }
+  }
 }
 
 
@@ -67,7 +77,7 @@
 .slideImg {
   margin-top: auto;
 
-  @include m {
+  @include t {
     width: 100%;
     height: auto;
   }
@@ -85,7 +95,7 @@
   display: flex;
   gap: 12px;
   position: absolute;
-  right: calc(-1 * (100vw - 503px)/2 + 300px);
+  right: calc(-1 * (100vw - 503px) / 2 + 300px);
   top: -60px;
 }
 
