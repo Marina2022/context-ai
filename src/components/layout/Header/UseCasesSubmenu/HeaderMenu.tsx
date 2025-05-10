@@ -25,11 +25,15 @@ const HeaderMenu = () => {
   const [currentMenuItem, setCurrentMenuItem] = useState(0)
   const isTablet = useTabletScreen()
 
+  if (isTablet === null) return null; 
+
   if (isTablet) return <UseCasesSubmenuMobile
     headerMenuItems={headerMenuItems}
     currentMenuItem={currentMenuItem}
     setCurrentMenuItem={setCurrentMenuItem}/>
 
+    
+  
   return (
     <div className={s.menuWrapper}>
       <div className={s.menuContainer}>

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const useTabletScreen = () => {
 
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
+  const [isMobileScreen, setIsMobileScreen] = useState(null);
 
   useEffect(() => {
     const checkScreenSize = () => {
