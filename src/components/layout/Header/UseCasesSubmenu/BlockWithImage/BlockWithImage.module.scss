@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.comingBtn {
+  border: 0.5px solid rgba(21, 21, 23, 0.1);
+  border-radius: 24px;
+  background: rgba(21, 21, 23, 0.03);
+  width: 89px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  color: rgba(21, 21, 23, 0.64);
+}
+
+.title {
+ color: var(--title);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.period {
+  font-size: 11px;
+  color: rgba(21, 21, 23, 0.64);
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.bottomBlock {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 0.5px solid rgba(21, 21, 23, 0.2);
+  border-radius: 4px;
+  background: rgba(21, 21, 23, 0.01);
+  display: flex;
+  align-items: center;
+}
+
+.learnHow {
+  color: rgba(21, 21, 23, 0.4);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.getStarted {
+  color: var(--title);
+  font-size: 12px;
+  line-height: 22px;
+  font-family: SuisseIntlBook;
+}
+
+.playBtn {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background: rgba(21, 21, 23, 0.06);
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  svg {
+    position: relative;
+    left: 2px;
+  }
+}

@@ -8,11 +8,9 @@ import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide4Mobile.png'
 import useTabletScreen from "@/hooks/useTabletScreen";
 
 const Slide4 = () => {
-
   const isTablet = useTabletScreen()
   return (
     <div className={s.slideContent}>
-
       <h3 className={s.slideTitle}>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fillRule="evenodd" clipRule="evenodd"
@@ -20,13 +18,10 @@ const Slide4 = () => {
                 fill="#151517" fillOpacity="0.88"/>
           <path d="M16.1785 6.66679L11.6666 2.15495V6.66679H16.1785Z" fill="#151517" fillOpacity="0.88"/>
         </svg>
-
-
         <span>
           Smart Document & Report Generation. 
         </span>
       </h3>
-
       <p className={s.slideText}>
         Draft reports, summaries, and business documents in seconds. Context extracts key insights, formats content, and
         ensures clarity and accuracy.

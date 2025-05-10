@@ -9,6 +9,13 @@
   line-height: 48px;
   letter-spacing: -0.4px;
   margin-bottom: 16px;
+  margin-top: 20px;
+  text-transform: capitalize;
+
+  @include m {
+    max-width: 92%;
+    margin-inline: auto;
+  }
 }
 
 .text {
@@ -17,18 +24,23 @@
   line-height: 27px;
   margin-bottom: 56px;
   margin-inline: auto;
-}
+  text-align: center;
 
+  @include m {
+    margin-bottom: 45px;
+    padding-inline: 16px;
+  }
+}
 
 .outerWrapper {
   margin-bottom: 112px;
-  
+
   @include m {
-    margin-bottom: 80px;
+    margin-bottom: 96px;
   }
 }
 
 .swiper {
   overflow: visible;
-  
+
 }

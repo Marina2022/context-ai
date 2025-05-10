@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   gap: 24px;
-  margin-bottom: 112px;
+  margin-bottom: 54px;
 
   @include t {
     margin-inline: 20px;
@@ -13,6 +13,8 @@
   
   @include m {
     flex-wrap: wrap;
+    gap: 34px;
+    margin-bottom: 49px;
   }
 }
 
@@ -29,7 +31,7 @@
 }
 
 .rightPart {
-  padding-left: 15px;
+  margin-left: -11px;
   max-width: calc(81.5% - 12px);
   width: calc(50vw - 100px);
   min-width: calc(50% - 12px);
@@ -66,7 +68,7 @@
 }
 
 .image {
-  width: 100%;
+  width: 105.8%;
   height: auto;
   
 }

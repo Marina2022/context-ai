@@ -3,11 +3,20 @@
 .logoWrapper {
   display: flex;
   gap: 76px;
-  margin-top: 150px;
+  margin-top: 160px;
   overflow: hidden;
   
   @include m {
     gap: 62px;
     margin-top: 40px;
+  }
+}
+
+.item {
+  &:last-child {
+    margin-right: 76px;
+  }
+  &:first-child {
+    margin-left: 16px;
   }
 }

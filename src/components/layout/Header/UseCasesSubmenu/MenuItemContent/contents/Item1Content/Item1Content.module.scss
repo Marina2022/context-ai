@@ -1,0 +1,66 @@
+@use '@/assets/styles/mixins' as *;
+
+.title {
+  font-size: 11px;
+  font-family: SuisseIntlMono;
+  color: rgba(21, 21, 23, .4);  
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2.2px;
+  
+  @include t {
+    display: none;
+  }
+}
+
+.titleMobile {
+  display: none;
+  @include t {
+    display: block;
+    font-size: 11px;
+    font-family: SuisseIntlMono;
+    color: rgba(21, 21, 23, .4);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2.2px;
+    margin-top: 10px;
+  }
+  
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;  
+}
+
+.listItem {
+  display: flex;
+  gap: 12px;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: rgba(21, 21, 23, .05);
+  flex-shrink: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--title);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(21, 21, 23, .64);
+  max-width: 228px;
+}

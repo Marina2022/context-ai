@@ -14,22 +14,17 @@ const TwoFeatures = () => {
           Collaborate in real time—comment, edit, and share documents effortlessly. Context keeps everyone on the same
           page and accelerates decision-making.
         </p>
-
-        <Image width={424}  className={s.img} src={featureOneImg} alt="screenshot" />
-        
-
-
+        <Image width={424}  className={s.img} src={featureOneImg} alt="screenshot" />        
       </div>
       <div className={s.featureBlock}>
         <h3 className={s.subTitle}>
           <img src="/img/icons/trusted.svg" alt="icon"/>
           <span>Trusted, Transparent, and Reliable.</span>
         </h3>
-        <p className={s.text}>
+        <p className={s.textTwo}>
           Context combines your data with verified sources, delivering accurate, traceable insights with enterprise security for your critical information.
         </p>
         <Image width={424} height={284} className={s.img} src={featureTwoImg} alt="screenshot" />
-
       </div>
     </div>
   );

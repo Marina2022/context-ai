@@ -15,7 +15,7 @@
 }
 
 .featureBlock {
-  padding: 64px 40px;  
+  padding: 66px 38px 62px;  
   border-bottom: 0.5px solid rgba(21, 21, 23, 0.2);
   border-left: 0.5px solid rgba(21, 21, 23, 0.2);
   border-right: 0.5px solid rgba(21, 21, 23, 0.2);
@@ -40,6 +40,7 @@
 }
 
 .subTitle {
+  padding-left: 26px;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -47,16 +48,37 @@
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 16px;
+  letter-spacing: -0.16px;
+  
+  @include m {
+    padding-left: 0;
+    line-height: 24px;
+  }
 }
-
 
 .text {
   line-height: 24px;
   margin-bottom: 64px;
   font-size: 14px;
+  padding-left: 26px;
+  letter-spacing: 0.16px;
   
   @include m {
+    padding-left: 0;
     margin-bottom: 48px;    
+  }
+}
+
+.textTwo {
+  line-height: 24px;
+  margin-bottom: 56px;
+  font-size: 14px;
+  padding-left: 26px;
+  letter-spacing: 0.16px;
+
+  @include m {
+    padding-left: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -69,8 +91,9 @@
 }
 
 .img {
-  width: 100%;
+  width: 102%;
   height: auto;
   object-fit: contain;
   object-position: top;
 }
+

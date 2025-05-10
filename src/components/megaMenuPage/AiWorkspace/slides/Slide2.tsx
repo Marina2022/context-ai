@@ -8,7 +8,6 @@ import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide2Mobile.png'
 import useTabletScreen from "@/hooks/useTabletScreen";
 
 const Slide2 = () => {
-
   const isTablet = useTabletScreen()
   return (
     <div className={s.slideContent}>

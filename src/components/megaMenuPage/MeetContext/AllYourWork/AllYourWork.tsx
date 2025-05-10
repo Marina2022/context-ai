@@ -18,7 +18,7 @@ const AllYourWork = () => {
             <span>All Your Work In One Place.</span>
           </h3>
           <p className={s.allWorkInOnePlaceText}>
-            Context isn’t just about integrating your apps—our AI can capture, organize, and contextualize your data,
+            Context isn’t just about integrating your apps — our AI can capture, organize, and contextualize your data,
             helping you work faster. It can gather feedback from emails, extract insights from Google Docs, consolidate
             customer details from Salesforce, and more.
           </p>

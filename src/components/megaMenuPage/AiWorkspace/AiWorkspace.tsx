@@ -18,19 +18,15 @@ const AiWorkspace = () => {
         <p className={s.text}>
           A smarter way to work with AI-powered tools for writing, research, data, and visualization.
         </p>
-
         <div className={s.outerWrapper}>
           {
             !isTablet && <AiWorkspaceSlider/>
           }
-
           {
             isTablet && <AiWorkspaceMobile/>
           }          
         </div>
       </div>
-
-
     </>
   );
 };

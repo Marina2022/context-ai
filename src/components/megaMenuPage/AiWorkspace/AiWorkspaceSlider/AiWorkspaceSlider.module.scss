@@ -19,7 +19,7 @@
 
 .swiper {
   overflow: visible;
-  height: 608px;
+  height: 600px;
 }
 
 .slide {
@@ -35,8 +35,7 @@
   }
 }
 
-
-/// styles for slides
+// styles for slides
 
 .slideContent {
   height: 100%;
@@ -72,10 +71,20 @@
   margin-bottom: 40px;
   line-height: 24px;
   padding-left: 25px;
+  max-width: 97%;
+  
+  @include m {
+    margin-bottom: 26px;
+  }
 }
 
 .slideImg {
   margin-top: auto;
+
+  @include t {
+    width: 100%;
+    height: auto;
+  }
 
   @include t {
     width: 100%;
@@ -95,7 +104,7 @@
   display: flex;
   gap: 12px;
   position: absolute;
-  right: calc(-1 * (100vw - 503px) / 2 + 300px);
+  right: calc(-1 * (100vw - 503px) / 2 + 290px);
   top: -60px;
 }
 

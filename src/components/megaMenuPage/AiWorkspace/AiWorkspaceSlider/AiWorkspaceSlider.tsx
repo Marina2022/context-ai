@@ -13,10 +13,9 @@ import Slide5 from "@/components/megaMenuPage/AiWorkspace/slides/Slide5";
 import {useRef, useState} from "react";
 const AiWorkspaceSlider = () => {
 
-  const prevRef = useRef<HTMLButtonElement | null>(null);
-  const nextRef = useRef<HTMLButtonElement | null>(null);
-
-  const [activeIndex, setActiveIndex] = useState(0);
+  const prevRef = useRef<HTMLButtonElement | null>(null)
+  const nextRef = useRef<HTMLButtonElement | null>(null)
+  const [activeIndex, setActiveIndex] = useState(0)
         
   return (
     <div className={s.outer}>
@@ -50,10 +49,7 @@ const AiWorkspaceSlider = () => {
               swiper.params.navigation.nextEl = nextRef.current;
             }
           }}
-
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-
-
         >
           <SwiperSlide className={s.slide}>
             <Slide1/>

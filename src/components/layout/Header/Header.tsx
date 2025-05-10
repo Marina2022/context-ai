@@ -1,6 +1,5 @@
 import s from './Header.module.scss';
-import HeaderMenu from "@/components/layout/Header/HeaderMenu/HeaderMenu";
-
+import HeaderMenu from "@/components/layout/Header/UseCasesSubmenu/HeaderMenu";
 
 const Header = () => {
   return (
@@ -8,7 +7,6 @@ const Header = () => {
       <header className={s.header}>
         Header
       </header>
-
       <HeaderMenu/>
     </>
 

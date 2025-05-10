@@ -11,8 +11,19 @@ const YourWorkContentBlock = () => {
     <>
       <div className={s.yourWorkContentBlock}>
         <div className={s.innerBlock}>
-          Create a clear, engaging document that explains budgeting basics, investment strategies, personal finance. The
-          document should be well structured and formatted in a professional way
+          <div className={s.innerBlockText}>
+            Create a clear, engaging document that explains budgeting basics, investment strategies, personal finance. The
+            document should be well structured and formatted in a professional way
+          </div>
+          <button className={s.innerBlockBtn}>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.9346 3.11674C14.1484 2.46722 13.5321 1.85089 12.8825 2.06465L1.36189 5.85626C0.584696 6.11204 0.603056 7.2178 1.38832 7.4476L6.9298 9.06953L8.55167 14.6109C8.78147 15.3962 9.8872 15.4146 10.143 14.6374L13.9346 3.11674Z"
+                fill="white"/>
+            </svg>
+            <span>Try it now</span>
+          </button>
+
         </div>
       </div>
 
@@ -72,8 +83,6 @@ const YourWorkContentBlock = () => {
         </svg>
       </Link>
     </>
-
-
   );
 };
 

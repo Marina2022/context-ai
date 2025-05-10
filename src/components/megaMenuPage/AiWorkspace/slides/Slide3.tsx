@@ -8,7 +8,6 @@ import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide3Mobile.png'
 import useTabletScreen from "@/hooks/useTabletScreen";
 
 const Slide3 = () => {
-
   const isTablet = useTabletScreen()
   return (
     <div className={s.slideContent}>
@@ -22,12 +21,10 @@ const Slide3 = () => {
                 d="M15.3452 12.9882C14.6944 12.3373 13.639 12.3373 12.9882 12.9882C12.3373 13.6391 12.3373 14.6943 12.9882 15.3452C13.639 15.9961 14.6944 15.9961 15.3452 15.3452C15.9961 14.6943 15.9961 13.6391 15.3452 12.9882ZM11.8097 11.8096C13.1114 10.5079 15.2219 10.5079 16.5237 11.8096C17.622 12.908 17.7937 14.582 17.0387 15.8602L18.0893 16.9108C18.4147 17.2362 18.4147 17.7639 18.0893 18.0893C17.7639 18.4147 17.2362 18.4147 16.9108 18.0893L15.8602 17.0387C14.5819 17.7936 12.9079 17.622 11.8097 16.5237C10.5079 15.222 10.5079 13.1114 11.8097 11.8096Z"
                 fill="#151517" fillOpacity="0.88"/>
         </svg>
-
         <span>
           Research & Insights at Your Fingertips.  
         </span>
       </h3>
-
       <p className={s.slideText}>
         Context searches, summarizes, and organizes research from both your data and verified internet sources,
         delivering the right insights exactly when you need them.

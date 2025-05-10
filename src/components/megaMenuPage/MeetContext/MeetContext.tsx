@@ -7,14 +7,11 @@ import TwoFeatures from "@/components/megaMenuPage/MeetContext/TwoFeatures/TwoFe
 const MeetContext = () => {
   return (
     <div className='container'>
-
       <MeetContextHeader/>
       <AllYourWork/>
       <MeetContexQuotation/>
       <TwoFeatures />      
     </div>
-
-
   );
 };
 

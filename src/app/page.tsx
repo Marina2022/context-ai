@@ -7,7 +7,6 @@ import AiWorkspace from "@/components/megaMenuPage/AiWorkspace/AiWorkspace";
 import Integrations from "@/components/megaMenuPage/Integrations/Integrations";
 import PutAiToWork from "@/components/megaMenuPage/PutAiToWork/PutAiToWork";
 
-
 export default function Home() {
   return (
     <div>

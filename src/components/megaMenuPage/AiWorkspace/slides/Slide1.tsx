@@ -8,11 +8,10 @@ import slideImageMobile from '@/assets/img/megaMenuPage/slider/slide1Mobile.png'
 import useTabletScreen from "@/hooks/useTabletScreen";
 
 const Slide1 = () => {
-  
+
   const isTablet = useTabletScreen()
   return (
     <div className={s.slideContent}>
-
       <h3 className={s.slideTitle}>
         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fillRule="evenodd" clipRule="evenodd"
@@ -23,9 +22,9 @@ const Slide1 = () => {
           AI-Powered Presentations.
         </span>
       </h3>
-
       <p className={s.slideText}>
-        Generate, edit, and refine slides instantly. Context structures your ideas, formats them professionally, and ensures your presentations are ready to impress.
+        Generate, edit, and refine slides instantly. Context structures your ideas, formats them professionally, and
+        ensures your presentations are ready to impress.
       </p>
       <Image className={s.slideImg} src={isTablet ? slideImageMobile : slideImage} alt="img"/>
     </div>

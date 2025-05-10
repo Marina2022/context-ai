@@ -17,17 +17,34 @@
   text-align: center;
   font-size: 17px;
   line-height: 27px;
-  margin-bottom: 110px;
+  margin-bottom: 24px;
 }
 
 .image {
-  margin-bottom: 112px;
+  margin-bottom: 117px;
   max-width: 100%;
   height: auto;
   
   @include m {
-    margin-bottom: 48px;
-  }
-  
+    margin-bottom: 30px;
+  } 
 }
+
+.integrationsBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;  
+  margin-inline: auto;
+  border-radius: 4px;
+  background: linear-gradient(180.00deg, rgb(0, 86, 115),rgb(0, 48, 64) 100%);
+  margin-bottom: 56px;
+  opacity: 0.8;  
+  color: white;
+  height: 32px;
+  width: 178px;  
+  font-size: 14px;
+  letter-spacing: -0.28px;
+}
+
 

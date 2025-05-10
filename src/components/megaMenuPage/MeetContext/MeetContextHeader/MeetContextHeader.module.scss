@@ -1,14 +1,14 @@
 @use '@/assets/styles/mixins' as *;
 
 .meetContextHeader {
-  margin-top: 112px;
+  margin-top: 151px;
   margin-bottom: 56px;
   max-width: 510px;
   margin-inline: auto;
   text-align: center;
 
   @include m {
-    margin-top: 80px;
+    margin-top: 123px;
     margin-bottom: 48px;
     padding-inline: 20px;
   }
@@ -18,11 +18,12 @@
   margin-bottom: 16px;
   font-size: 40px;
   color: var(--title);
+  letter-spacing: -0.4px;
 
   @include m {
     font-family: 'testSignifier' !important;
     font-weight: 500;
-    font-size: 30px;
+    line-height: 48px;
   }
 }
 
