@@ -29,8 +29,11 @@ export default function ContactForm() {
     formData.append('email', formState.email)
     formData.append('message', formState.message)
 
+    // Honeypot field to catch bots (invisible to users)
+    formData.append('_gotcha', '')
+
     try {
-      const res = await fetch('https://formspree.io/f/mwporezy', {
+      const res = await fetch('https://formspree.io/f/mjkwavvd', {
         method: 'POST',
         headers: { Accept: 'application/json' },
         body: formData,
@@ -44,7 +47,6 @@ export default function ContactForm() {
         setError(data.message || 'Something went wrong. Please try again.')
       }
     } catch (err) {
-      console.log(err)
       setError('Network error. Please try again.')
     }
   }
