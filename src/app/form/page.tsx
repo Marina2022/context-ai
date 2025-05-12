@@ -47,6 +47,7 @@ export default function ContactForm() {
         setError(data.message || 'Something went wrong. Please try again.')
       }
     } catch (err) {
+      console.log(err)
       setError('Network error. Please try again.')
     }
   }
