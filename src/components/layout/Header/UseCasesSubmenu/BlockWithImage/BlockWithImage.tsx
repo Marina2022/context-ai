@@ -12,7 +12,7 @@ const BlockWithImage = () => {
         </div>
         <button className={s.comingBtn}>Coming soon</button>
       </div>
-      <Image src={casesMenuPicture} alt="introduction"/>
+      <Image className={s.img} src={casesMenuPicture} alt="introduction"/>
       <div className={s.bottomBlock}>
         <div>
           <div className={s.learnHow}>Learn how to —</div>

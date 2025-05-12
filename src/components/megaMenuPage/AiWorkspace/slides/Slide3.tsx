@@ -29,7 +29,7 @@ const Slide3 = () => {
         Context searches, summarizes, and organizes research from both your data and verified internet sources,
         delivering the right insights exactly when you need them.
       </p>
-      <Image className={s.slideImg} src={isTablet ? slideImageMobile : slideImage} alt="img"/>
+        <Image className={`${s.slideImg} ${s.imageNoPadding}`} src={isTablet ? slideImageMobile : slideImage} alt="img"/>
     </div>
   );
 };

@@ -43,11 +43,11 @@
   flex-direction: column;
 
   border-radius: 4px;
-  padding: 40px 39px;
+  padding: 40px 0px;
   overflow: hidden;
   border: 0.5px solid rgba(21, 21, 23, 0.2);
 
-  @include m {
+  @include t {
     padding: 20px 0px;
   }
 }
@@ -79,17 +79,17 @@
 }
 
 .slideImg {
+  padding-left: 39px;
   margin-top: auto;
+  max-width: 100%;
+  height: auto;
 
   @include t {
     width: 100%;
     height: auto;
+    padding-left: 0px;
   }
-
-  @include t {
-    width: 100%;
-    height: auto;
-  }
+    
 }
 
 .slideImg2and5 {
@@ -122,4 +122,8 @@
     fill: #151515;
     fill-opacity: 0.24;
   }
+}
+
+.imageNoPadding {
+  padding-left: 0;
 }

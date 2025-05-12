@@ -26,7 +26,7 @@ const Slide4 = () => {
         Draft reports, summaries, and business documents in seconds. Context extracts key insights, formats content, and
         ensures clarity and accuracy.
       </p>
-      <Image className={s.slideImg} src={isTablet ? slideImageMobile : slideImage} alt="img"/>
+      <Image className={`${s.slideImg} ${s.imageNoPadding}`} src={isTablet ? slideImageMobile : slideImage} alt="img"/>
     </div>
   );
 };
