@@ -1,53 +1,87 @@
 'use client'
+import { useState, ChangeEvent, FormEvent } from 'react'
 
-import React from 'react';
-import {useForm, ValidationError} from '@formspree/react';
-
-function ContactForm() {
-  const [state, handleSubmit] = useForm("mwporezy");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
-  return (
-    <div className='container'>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="email">
-            Email Address
-          </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-          />
-          <ValidationError
-            prefix="Email"
-            field="email"
-            errors={state.errors}
-          />
-        </div>
-        <br/>
-        <div>
-        <textarea
-          id="message"
-          name="message"
-        />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
-        </div>
-        <br/>
-        <div>
-          <button type="submit" disabled={state.submitting}>
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
-  );
+type FormDataType = {
+  fullName: string
+  email: string
+  message: string
 }
 
+export default function ContactForm() {
+  const [formState, setFormState] = useState<FormDataType>({
+    fullName: '',
+    email: '',
+    message: '',
+  })
+  const [isSent, setIsSent] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-export default ContactForm;
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormState({ ...formState, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setError(null)
+
+    const formData = new FormData()
+    formData.append('fullName', formState.fullName)
+    formData.append('email', formState.email)
+    formData.append('message', formState.message)
+
+    try {
+      const res = await fetch('https://formspree.io/f/mwporezy', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: formData,
+      })
+
+      if (res.ok) {
+        setIsSent(true)
+        setFormState({ fullName: '', email: '', message: '' })
+      } else {
+        const data = await res.json()
+        setError(data.message || 'Something went wrong. Please try again.')
+      }
+    } catch (err) {
+      setError('Network error. Please try again.')
+    }
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4">
+      {isSent && <p className="text-green-600">Message sent!</p>}
+      {error && <p className="text-red-600">{error}</p>}
+
+      <input
+        type="text"
+        name="fullName"
+        placeholder="Your name"
+        value={formState.fullName}
+        onChange={handleChange}
+        required
+        className="border p-2 w-full"
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email"
+        value={formState.email}
+        onChange={handleChange}
+        required
+        className="border p-2 w-full"
+      />
+      <textarea
+        name="message"
+        placeholder="Your message"
+        value={formState.message}
+        onChange={handleChange}
+        required
+        className="border p-2 w-full"
+      />
+      <button type="submit" className="bg-blue-600 text-white px-4 py-2 disabled:opacity-50">
+        Send
+      </button>
+    </form>
+  )
+}
